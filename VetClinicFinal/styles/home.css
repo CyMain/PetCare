@@ -1,0 +1,210 @@
+#brand{
+    background-color: var(--sectionColor1);
+    .brand-container{
+        width: clamp(150px, 100%, 900px);
+        display: flex;
+        flex-direction: column;
+        
+        gap: 10vh;
+    }
+
+    .clinic-hype{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        
+        .hype-under{
+            background-color: var(--hovers);
+            margin-top: 4%;
+            border-radius: 20px;
+            padding: 4%;
+        }
+    }
+    
+    .services-optimized{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 4vh;
+    }
+    
+    #horizontal-services-display{
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        height: clamp(50px, 16vw, 150px);
+        width:70%;
+        background-color: var(--scrollingColor);
+        border-radius: 20px;
+        overflow: hidden;
+
+        #scrolling-services{
+            display: flex;
+            justify-content: left;
+            animation: scrollLeft 20s linear infinite;
+            
+
+            &:hover{
+                animation-play-state: paused;
+            }
+
+            .service{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: var(--sectionColor3);
+                border-radius: 20px;
+                padding: 2% 0;
+                cursor: pointer;
+                flex: 0 0 100%;
+                img{
+                    width: clamp(20px, 100%, 100px);
+                    margin-bottom: 1%;
+                }
+            }
+        }
+
+    }
+    
+    #service-animal-selector{
+        display: flex;
+        justify-content: left;
+        gap: 2vw;
+        height: 10vh;
+    
+        *{
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    
+        select{
+            width: 20%;
+            text-align: center;
+        }
+    
+        button{
+            width: 25%;
+            border: none;
+            background-color: var(--subColor1);
+    
+            &:hover{
+                background-color: var(--subColor3);
+            }
+        }
+    }
+}
+
+#boarding{
+    background-color: var(--sectionColor2);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+
+    .boarding-container{
+        display: flex;
+        gap: 10%;
+        margin-bottom: 2%
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        h2{
+            margin-bottom: 2%;
+        }   
+
+        p{
+            line-height: 150%;
+        }
+    }
+
+    
+    img{
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    button{
+        cursor: pointer;
+        width: 25%;
+        padding: clamp(20px, 2%, 100px) clamp(20px, 2%, 100px);
+        border: none;
+        background-color: var(--subColor1);
+        border-radius: 20px;
+
+        &:hover{
+            background-color: var(--subColor3);
+        }
+    }
+}
+
+#hospitals{
+    background-color: var(--sectionColor3);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+
+    .hospitals-container{
+        display: flex;
+        gap: 20%;
+        margin-bottom: 2%;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        h2{
+            margin-bottom: 2%;
+        }   
+
+        p{
+            line-height: 150%;
+        }
+    }
+
+    img{
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    button{
+        cursor: pointer;
+        width: 25%;
+        padding: clamp(20px, 2%, 100px) clamp(20px, 2%, 100px);
+        border: none;
+        background-color: var(--subColor1);
+        border-radius: 20px;
+
+        &:hover{
+            background-color: var(--subColor3);
+        }
+    }
+}
+
+@media (max-width:700px) {
+    #boarding{
+        .boarding-container{
+            flex-direction: column;
+
+            *{
+                width: 100%;
+            }
+        }
+    }
+
+    #hospitals{
+        .hospitals-container{
+            flex-direction: column;
+
+            *{
+                width: 100%;
+            }
+        }
+    }
+}

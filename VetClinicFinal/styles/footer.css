@@ -1,0 +1,27 @@
+footer{
+    background-color: var(--footerColor);
+    color: var(--fontColor1);
+    padding: 10vh 4vw;
+
+    .group{
+        margin-bottom: 6%;
+
+         .group-head{
+            cursor: pointer;
+            color: var(--fontColor2);
+            padding: 2% 0;
+            border-bottom: 1px solid var(--fontColor2);
+         }
+         ul{
+            list-style: none;
+            li{
+                cursor: pointer;
+                margin-top: 4%;
+            }
+         }
+    }
+}
+
+@media (max-width:600px) {
+    
+}

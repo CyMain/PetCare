@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    padding-top: 10vh;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 8vw;
+}
